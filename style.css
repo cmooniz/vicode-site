@@ -39,7 +39,7 @@ p {
 #section-1 {
 	height: 100vh;
 	display: flex;
-	background-image: url(/Images/bg-desktop.png);
+	background-image: url(Images/bg-desktop.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
