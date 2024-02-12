@@ -215,7 +215,7 @@ nav ul li:last-child a {
 #section-2 {
 	height: max-content;
 	display: flex;
-	background-image: url(/Images/bg-desktop-1.png);
+	background-image: url(Images/bg-desktop-1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -415,7 +415,7 @@ label::after {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url(/Images/bg-desktop-2.png);
+	background: url(Images/bg-desktop-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
