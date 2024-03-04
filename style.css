@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
 :root {
 	font-size: 62.5%;
-	font-family: "League Spartan", sans-serif;
+	font-family: 'League Spartan', sans-serif;
 }
 * {
 	margin: 0;
@@ -34,6 +34,25 @@ p {
 #menu {
 	width: 10%;
 	border-right: 1px solid #ffffff9f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5%;
+}
+.menu-icon img {
+	width: 40px;
+}
+.socials {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.socials img {
+	filter: invert(100%);
+	width: 25px;
+	display: flex;
 }
 /* * Section-1 ----------------------------------------------- */
 #section-1 {
@@ -168,7 +187,7 @@ nav ul li:last-child a {
 	justify-content: flex-end;
 }
 .box-2 div::before {
-	content: "";
+	content: '';
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -362,7 +381,7 @@ nav ul li:last-child a {
 .card-box-4 label::after {
 	font-weight: 300;
 	font-size: clamp(6rem, 4vw + 1rem, 8rem);
-	content: "→";
+	content: '→';
 }
 .expand {
 	height: 0px;
@@ -710,7 +729,8 @@ footer {
 	width: 15%;
 	filter: invert(100%);
 }
-.menu-explore, .contact{
+.menu-explore,
+.contact {
 	width: auto;
 }
 .menu-explore ul,
@@ -756,7 +776,7 @@ footer {
 .newsletter input::placeholder {
 	color: #000000;
 	font-size: 1.8rem;
-	font-family: "league spartan";
+	font-family: 'league spartan';
 }
 .copy {
 	width: 70%;
@@ -780,6 +800,14 @@ footer {
 		padding: 5% 0 0 5%;
 	}
 	#menu {
+		order: 2;
+		z-index: 2;
+		padding: 5rem;
+	}
+	#section-2 #menu {
+		display: none;
+	}
+	.socials {
 		display: none;
 	}
 	.links-desktop {
@@ -813,6 +841,12 @@ footer {
 		flex-direction: column;
 	}
 	/** Section-2 ------------------------  */
+	#section-2 {
+		background-image: url(Images/bg-mobile-2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 	.title {
 		align-items: center;
 		width: 100%;
@@ -1024,10 +1058,10 @@ footer {
 		width: 60%;
 	}
 	/** Footer ------------------------ */
-	#footer{
+	#footer {
 		gap: 20px;
 	}
-	.footer-logo{
+	.footer-logo {
 		align-items: center;
 	}
 	.box-6 {
@@ -1037,11 +1071,12 @@ footer {
 		align-items: center;
 		gap: 30px;
 	}
-	.menu-explore, .contact{
+	.menu-explore,
+	.contact {
 		width: 50%;
 		text-align: center;
 	}
-	.contact{
+	.contact {
 		border-block: 1px solid #000000;
 		padding-block: 30px;
 	}
@@ -1050,5 +1085,21 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+	}
+}
+@media (max-width: 768px) {
+	#section-1 {
+		background-image: url(Images/bg-tablet.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+@media (max-width: 600px) {
+	#section-1 {
+		background-image: url(Images/bg-mobile.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
